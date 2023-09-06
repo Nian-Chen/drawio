@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-06T08:04:03.557Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="hsYoo6S_34htzfxgwcJW" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-06T09:54:35.775Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="K-XLgcjMZNy4RQm0NxAJ" version="21.7.2" type="github">
   <diagram name="第 1 页" id="sXI6oTRlvRjUnkQEZYFn">
-    <mxGraphModel dx="864" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1037" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,16 +8,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fjcy8U5pSETEeFE4OCs9-1" value="获取待添加背景音乐的短视频" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="40" width="220" height="60" as="geometry" />
+          <mxGeometry x="20" y="40" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fjcy8U5pSETEeFE4OCs9-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fjcy8U5pSETEeFE4OCs9-8" target="fjcy8U5pSETEeFE4OCs9-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fjcy8U5pSETEeFE4OCs9-8" value="将短视频送入特征提取模块，获取短视频对应的图像特征序列和文本特征序列" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="130" width="220" height="60" as="geometry" />
+        <mxCell id="fjcy8U5pSETEeFE4OCs9-8" value="将短视频送入特征提取模块，获取短视频对应的特征向量序列" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="130" width="220" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fjcy8U5pSETEeFE4OCs9-10" value="融合特征序列，将其送入音乐生成模型，为短视频生成对应的背景音乐" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="220" width="220" height="60" as="geometry" />
+        <mxCell id="fjcy8U5pSETEeFE4OCs9-10" value="将特征向量序列送入音乐生成模型，为短视频生成对应的背景音乐" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="220" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fjcy8U5pSETEeFE4OCs9-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fjcy8U5pSETEeFE4OCs9-20" target="fjcy8U5pSETEeFE4OCs9-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -28,7 +28,7 @@
         <mxCell id="fjcy8U5pSETEeFE4OCs9-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fjcy8U5pSETEeFE4OCs9-22" target="fjcy8U5pSETEeFE4OCs9-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fjcy8U5pSETEeFE4OCs9-22" value="将第二数据集中的短视频送入特征提取模块，获取每个短视频的图像特征序列和文本特征序列；融合每个短视频的特征序列，并与背景音乐组成第三数据集" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="fjcy8U5pSETEeFE4OCs9-22" value="将第二数据集中的短视频送入特征提取模块，获取每每个短视频的特征向量序列，并与背景音乐组成第三数据集" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="130" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fjcy8U5pSETEeFE4OCs9-23" value="利用第三数据集训练音乐生成模型" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -139,11 +139,23 @@
             <mxPoint x="690" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2gaOMBExnpWmV6sL_W9Z-1" value="短视频" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
+        <mxCell id="2gaOMBExnpWmV6sL_W9Z-1" value="图像特征向量序列" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
           <mxGeometry x="60" y="510" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2gaOMBExnpWmV6sL_W9Z-2" value="短视频" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
+        <mxCell id="2gaOMBExnpWmV6sL_W9Z-2" value="文本特征向量序列" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
           <mxGeometry x="220" y="510" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2gaOMBExnpWmV6sL_W9Z-8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;direction=south;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="120" y="540" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2gaOMBExnpWmV6sL_W9Z-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;endSize=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="199.94" y="580" as="sourcePoint" />
+            <mxPoint x="199.94" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2gaOMBExnpWmV6sL_W9Z-12" value="特征向量序列" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
+          <mxGeometry x="140" y="590" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
