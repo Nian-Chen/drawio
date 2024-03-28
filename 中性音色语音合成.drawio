@@ -1,9 +1,336 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T07:24:12.440Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.2.0" etag="Pd_lhtH49WNnYG3nY67I" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T07:24:27.846Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="xbf5Y4T3z5VU7aKr3L63" version="24.2.0" type="github">
   <diagram name="第 1 页" id="BX8lDQhgrjkH_T5noq3X">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-2" target="MRDBX0Kvai51XAQgQNeI-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-2" value="准备待合成文本内容" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="40" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-4" target="MRDBX0Kvai51XAQgQNeI-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-4" value="训练男声音色模型和女声音色模型，并通过融合策略和中性音色评分机制得到中性音色提示音频和中性音色模型。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-5" value="将待合成文本内容及中性音色提示音频送入中性音色模型，得到文本内容对应的中性音色音频" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="220" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-7" target="MRDBX0Kvai51XAQgQNeI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-7" value="利用男声和女声数据集训练男声音色模型及女声音色模型。采用不同加权系数对两者进行融合得到n个混合音色模型。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="40" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-9" target="MRDBX0Kvai51XAQgQNeI-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-9" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;将男声提示音频送入女声音色模型，得到浅融合提示音频_1；将女声提示音频送入男声音色模型，得到浅融合提示音频_2。&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="130" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-10" value="两条浅融合提示音频送入n个混合音色模型，获取2n条深融合提示音频。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="220" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-11" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="70" as="sourcePoint" />
+            <mxPoint x="313" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-12" value="S101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="35" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-13" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="160" as="sourcePoint" />
+            <mxPoint x="313" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-14" value="S102" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="125" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-15" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="250" as="sourcePoint" />
+            <mxPoint x="313" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-16" value="S103" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="215" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-17" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="683" y="70" as="sourcePoint" />
+            <mxPoint x="723" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="693" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-18" value="S201" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="713" y="35" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-19" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="683" y="159.5" as="sourcePoint" />
+            <mxPoint x="723" y="139.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="693" y="139.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-20" value="S202" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="713" y="124.5" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-21" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="683" y="250" as="sourcePoint" />
+            <mxPoint x="723" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="693" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-22" value="S203" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="713" y="215" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="MRDBX0Kvai51XAQgQNeI-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="543" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-24" value="利用语音性别分类模型对2n条深融合提示音频进行中性音色评分，将得分最高的音频和对应的混合音色模型分别作为中性音色提示音频和中性音色模型。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="310" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-25" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="683" y="340" as="sourcePoint" />
+            <mxPoint x="723" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="693" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-26" value="S203" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="713" y="305" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-28" target="MRDBX0Kvai51XAQgQNeI-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-28" value="文本内容" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="416" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-30" target="MRDBX0Kvai51XAQgQNeI-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-30" value="女声提示音频" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="17" y="466" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-32" target="MRDBX0Kvai51XAQgQNeI-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-32" value="男声音色模型" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="456" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-34" target="MRDBX0Kvai51XAQgQNeI-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-34" value="男声音色模型" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="456" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-38" target="MRDBX0Kvai51XAQgQNeI-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-36" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.03;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-38" target="MRDBX0Kvai51XAQgQNeI-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.033;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-38" target="MRDBX0Kvai51XAQgQNeI-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-38" value="浅融合提示音频_1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="115" y="516" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-40" target="MRDBX0Kvai51XAQgQNeI-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-40" value="男声提示音频" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="527" y="466" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-43" target="MRDBX0Kvai51XAQgQNeI-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-42" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.967;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-43" target="MRDBX0Kvai51XAQgQNeI-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-43" value="浅融合提示音频_2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="398" y="516" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.179;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135.20000000000002" y="607" as="sourcePoint" />
+            <mxPoint x="137.8" y="627" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-45" value="混合音色模型_1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="560" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-46" value="混合音色模型_n" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="403" y="560" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-47" value="混合音色模型_2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="253" y="560" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-48" value="......" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="347" y="562" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-49" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.953;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-43" target="MRDBX0Kvai51XAQgQNeI-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-50" value="深融合&lt;div&gt;提示音频_1&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="630" width="65" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-51" value="......" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="347" y="617" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-52" value="深融合&lt;div&gt;提示音频_2&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="168" y="630" width="65" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-53" value="深融合&lt;div&gt;提示音频_3&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="238" y="630" width="65" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-54" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.179;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200.2" y="600" as="sourcePoint" />
+            <mxPoint x="200" y="627" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-55" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.179;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270.53" y="600" as="sourcePoint" />
+            <mxPoint x="270.33000000000004" y="627" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-56" value="深融合&lt;div&gt;提示音频_2n&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="630" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-57" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.179;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485.53" y="600" as="sourcePoint" />
+            <mxPoint x="485.33000000000004" y="627" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-58" value="......" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="393" y="617" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-59" value="......" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="303" y="617" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="453" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-61" value="文本内容" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="423" y="416" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-62" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.69;dx=11.02;flipH=1;notch=0;rotation=-90;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="288.43" y="664.43" width="29.13" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-63" value="中性音色评分" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="233" y="687" width="140" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-64" value="中性音色提示音频&amp;nbsp; &amp;nbsp; &amp;nbsp; 中性音色模型" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="143.5" y="744" width="294.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-65" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.69;dx=11.02;flipH=1;notch=0;rotation=-90;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="288.43" y="727" width="29.13" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;endSize=3;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-67" target="MRDBX0Kvai51XAQgQNeI-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-67" value="提示音频" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="830" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-68" value="待合成文本" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="219.25" y="830" width="97" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-69" value="文本编码器模块" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="231.5" y="870" width="70.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-70" value="说话人特征提取模块" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="870" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-71" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;direction=south;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="164.5" y="900" width="204" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;endSize=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="266.58" y="850" as="sourcePoint" />
+            <mxPoint x="266.58" y="870" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="266.58" y="860" />
+              <mxPoint x="266.58" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-73" value="音频量化&lt;div&gt;模块&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="870" width="70.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.527;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;strokeWidth=2;endSize=3;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="266.53000000000003" y="901" as="sourcePoint" />
+            <mxPoint x="266.43" y="919.9200000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-75" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;endSize=3;" edge="1" parent="1" source="MRDBX0Kvai51XAQgQNeI-76" target="MRDBX0Kvai51XAQgQNeI-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-76" value="解码器模块" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="231.25" y="942" width="70.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-77" value="解量化模块" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="942" width="70.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;endSize=3;targetPerimeterSpacing=0;sourcePerimeterSpacing=0;exitX=0.052;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="266.51" y="937.9200000000001" as="sourcePoint" />
+            <mxPoint x="266.44" y="942" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="267.01" y="940" />
+              <mxPoint x="266.01" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-79" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;endSize=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="956.83" as="sourcePoint" />
+            <mxPoint x="434" y="956.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-80" value="预测音频" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="412" y="947" width="97" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-81" value="训练音频" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="412" y="875" width="97" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MRDBX0Kvai51XAQgQNeI-82" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;endSize=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="434" y="884.9000000000001" as="sourcePoint" />
+            <mxPoint x="403" y="884.9000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
