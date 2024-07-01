@@ -1,9 +1,182 @@
-<mxfile host="app.diagrams.net" modified="2024-07-01T02:44:36.657Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.2.9" etag="-P3g5Xp4dA1YWIHGUF4L" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-01T06:22:59.958Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="CwFqiRmRD7GzBPh7Rk44" version="24.2.9" type="github">
   <diagram name="第 1 页" id="mnX3V6nfKLM92d46HVXa">
-    <mxGraphModel>
+    <mxGraphModel dx="989" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="OJga95iIFIeJJQoVD0eW-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OJga95iIFIeJJQoVD0eW-3" target="OJga95iIFIeJJQoVD0eW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-3" value="输入歌词要求和旋律风格" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="40" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OJga95iIFIeJJQoVD0eW-5" target="OJga95iIFIeJJQoVD0eW-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-5" value="利用训练好的歌词生成模型进行歌词创作" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-6" value="将歌词和旋律风格输入训练好的歌曲生成模型，输出模型创作的歌曲" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="220" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-12" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="70" as="sourcePoint" />
+            <mxPoint x="313" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-13" value="S101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="35" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-14" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="160" as="sourcePoint" />
+            <mxPoint x="313" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-15" value="S102" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="125" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-16" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="250" as="sourcePoint" />
+            <mxPoint x="313" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-17" value="S103" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="215" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OJga95iIFIeJJQoVD0eW-29" target="OJga95iIFIeJJQoVD0eW-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-29" value="准备大量歌曲及对应的歌词文件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="305" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OJga95iIFIeJJQoVD0eW-31" target="OJga95iIFIeJJQoVD0eW-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-31" value="利用大模型对歌词进行主题总结以及结构标记" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="395" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-32" value="由歌词主题、结构化的歌词、歌曲及旋律风格组成每条样本数据，得到歌曲生成数据集" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="485" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-33" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="335" as="sourcePoint" />
+            <mxPoint x="313" y="315" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-34" value="S101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="300" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-35" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="425" as="sourcePoint" />
+            <mxPoint x="313" y="405" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-36" value="S102" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="390" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-37" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="273" y="515" as="sourcePoint" />
+            <mxPoint x="313" y="495" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="283" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-38" value="S103" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="303" y="480" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OJga95iIFIeJJQoVD0eW-40" target="OJga95iIFIeJJQoVD0eW-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-40" value="准备歌曲生成数据集" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OJga95iIFIeJJQoVD0eW-42" target="OJga95iIFIeJJQoVD0eW-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-42" value="利用数据集中的歌词主题和结构化歌词内容微调大模型，得到歌词生成模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-43" value="利用数据集中的旋律风格和歌曲训练旋律生成模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="220" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-44" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="70" as="sourcePoint" />
+            <mxPoint x="680" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-45" value="S101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="35" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-46" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="160" as="sourcePoint" />
+            <mxPoint x="680" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-47" value="S102" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="125" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-48" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="250" as="sourcePoint" />
+            <mxPoint x="680" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-49" value="S103" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="215" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="OJga95iIFIeJJQoVD0eW-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-51" value="利用数据集中的结构化歌词和歌曲训练旋律生成模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="310" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-52" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="340" as="sourcePoint" />
+            <mxPoint x="680" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OJga95iIFIeJJQoVD0eW-53" value="S103" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="305" width="50" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
