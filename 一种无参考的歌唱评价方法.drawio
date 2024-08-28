@@ -22,7 +22,7 @@
         <mxCell id="-YQCoGYBrYwNQmezE0NH-6" value="唱功维度评分" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="240" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-YQCoGYBrYwNQmezE0NH-8" value="情感维度评分" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-8" value="情绪维度评分" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="440" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-YQCoGYBrYwNQmezE0NH-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-YQCoGYBrYwNQmezE0NH-1" target="-YQCoGYBrYwNQmezE0NH-8">
@@ -37,8 +37,8 @@
         <mxCell id="-YQCoGYBrYwNQmezE0NH-12" value="语音识别" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="90" y="140" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-YQCoGYBrYwNQmezE0NH-13" value="情绪识别" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="360" y="140" width="150" height="30" as="geometry" />
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-13" value="语音情绪识别" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="375" y="140" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-YQCoGYBrYwNQmezE0NH-14" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
           <mxGeometry x="276.25" y="211.25" width="50" height="147.5" as="geometry" />
@@ -53,10 +53,10 @@
           <mxGeometry x="297.25" y="313" width="10" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-YQCoGYBrYwNQmezE0NH-20" value="爆发力" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="370" y="321" width="10" height="30" as="geometry" />
+          <mxGeometry x="370" y="322" width="10" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-YQCoGYBrYwNQmezE0NH-21" value="细腻度" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="333.25" y="321" width="10" height="30" as="geometry" />
+          <mxGeometry x="333.25" y="322" width="10" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
