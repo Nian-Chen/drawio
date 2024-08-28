@@ -1,9 +1,63 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="n1hpXf85z6GkrUY4EOpw">
-    <mxGraphModel>
+    <mxGraphModel dx="825" dy="395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-YQCoGYBrYwNQmezE0NH-1" target="-YQCoGYBrYwNQmezE0NH-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-1" value="歌唱人声音频" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="240" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-2" value="咬字维度评分" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-YQCoGYBrYwNQmezE0NH-1" target="-YQCoGYBrYwNQmezE0NH-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="110" as="sourcePoint" />
+            <mxPoint x="250" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-6" value="唱功维度评分" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="240" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-8" value="情感维度评分" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-YQCoGYBrYwNQmezE0NH-1" target="-YQCoGYBrYwNQmezE0NH-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="140" as="sourcePoint" />
+            <mxPoint x="110" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-10" value="音高序列预测" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="225" y="140" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-12" value="语音识别" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="90" y="140" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-13" value="情绪识别" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="360" y="140" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-14" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="276.25" y="211.25" width="50" height="147.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-17" value="音准" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="223" y="313" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-18" value="音高" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="261" y="313" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-19" value="音域" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="297.25" y="313" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-20" value="爆发力" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="370" y="321" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-21" value="细腻度" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="333.25" y="321" width="10" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
