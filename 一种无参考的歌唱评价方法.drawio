@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="n1hpXf85z6GkrUY4EOpw">
-    <mxGraphModel dx="725" dy="347" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1196" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -66,6 +66,57 @@
         </mxCell>
         <mxCell id="-YQCoGYBrYwNQmezE0NH-54" value="细腻度" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="752.75" y="301.75" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-YQCoGYBrYwNQmezE0NH-56" target="-YQCoGYBrYwNQmezE0NH-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-56" value="准备用于音高预测模型训练的数据集，每条样本包含歌唱人声音频以及对应的音高标注信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330.5" y="395" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-YQCoGYBrYwNQmezE0NH-58" target="-YQCoGYBrYwNQmezE0NH-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-58" value="提取音频的基频序列和CQT特征向量序列，将其作为音高预测模型的输入；对音高标注信息进行处理作为模型的标签" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330.5" y="485" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-59" value="计算损失值通过反向梯度传播训练模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330.5" y="575" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-65" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550.5" y="425" as="sourcePoint" />
+            <mxPoint x="590.5" y="405" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560.5" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-66" value="S101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580.5" y="390" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-67" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550.5" y="515" as="sourcePoint" />
+            <mxPoint x="590.5" y="495" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560.5" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-68" value="S102" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580.5" y="480" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-69" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550.5" y="605" as="sourcePoint" />
+            <mxPoint x="590.5" y="585" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560.5" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-YQCoGYBrYwNQmezE0NH-70" value="S103" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580.5" y="570" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
