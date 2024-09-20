@@ -324,7 +324,7 @@
             <mxPoint x="292" y="628" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M3RxGdTn4VQNR711qocf-54" value="将歌词、隐藏层特征向量序列、梅尔谱特征向量序列作为输入，情感标注作为标签，训练多模态歌唱情感识别模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="M3RxGdTn4VQNR711qocf-54" value="将歌词、梅尔谱特征向量序列作为输入，情感标注作为标签，训练多模态歌唱情感识别模型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="182" y="658" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="M3RxGdTn4VQNR711qocf-55" value="" style="endArrow=none;html=1;curved=1;" edge="1" parent="1">
